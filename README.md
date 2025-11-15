@@ -51,15 +51,6 @@ Taks-1
 
 ---
 
-## 📸 Preview (Optional)
-You can add screenshots here:
-
-```
-
-![Homepage Screenshot](assets/screenshot1.png)
-
-```
-
 ---
 
 ## 💡 Features
