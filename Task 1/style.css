@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.logo {
+    font-size: 2em;
+    cursor: default;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.content h2 {
+    font-weight: 700;
+}
+
+.content h4 {
+    font-weight: 500;
+}
+
+.social-icons a {
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    background-color: #b8db57;
+    color: #167ad7;
+}
+
+
+.about, .project {
+    padding: 60px 0;
+}
+
+.about h2, .project h2 {
+    
+    font-weight: 700;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.projects {
+    padding: 60px 0;
+}
+
+.projects .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.projects .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.projects .card-body {
+    padding: 20px;
+}
+
+.projects .card-title {
+    font-weight: 600;
+}
+
+.projects .card-text {
+    font-size: 1em;
+}
