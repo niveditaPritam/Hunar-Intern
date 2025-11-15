@@ -91,11 +91,8 @@ This project can be deployed on:
 A short demo video showcasing:
 
 - Website design  
-- Code files (`index.html`, `styles.css`)  
-- GitHub repo  
-- Live demo link  
-
-(Insert your video link here once uploaded to LinkedIn/YouTube/Drive)
+- Code files (`index.html`, `styles.css`)    
+- [Live demo link](https://hunar-intern.vercel.app/) 
 
 ---
 
