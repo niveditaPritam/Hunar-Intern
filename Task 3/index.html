@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">NETFLIX</div>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#tv-shows">TV Shows</a>
+            <a href="#movies">Movies</a>
+            <a href="#new">New & Popular</a>
+            <a href="#my-list">My List</a>
+        </nav>
+        <div class="user-menu">
+            <img src="https://via.placeholder.com/32x32/FFFFFF/000000?text=U" alt="User" class="user-avatar">
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Stranger Things</h1>
+                <p>When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.</p>
+                <div class="hero-buttons">
+                    <button class="play-btn">Play</button>
+                    <button class="info-btn">More Info</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <h2>Trending Now</h2>
+            <div class="row-posters" id="trending-row">
+                <!-- Posters will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <section class="row">
+            <h2>Top Rated</h2>
+            <div class="row-posters" id="top-rated-row">
+                <!-- Posters will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <section class="row">
+            <h2>Action Movies</h2>
+            <div class="row-posters" id="action-row">
+                <!-- Posters will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <section class="row">
+            <h2>Comedy</h2>
+            <div class="row-posters" id="comedy-row">
+                <!-- Posters will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for movie details and video player -->
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="movie-details">
+                <img id="modal-poster" src="" alt="Movie Poster">
+                <div class="movie-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <p><strong>Genre:</strong> <span id="modal-genre"></span></p>
+                    <p><strong>Year:</strong> <span id="modal-year"></span></p>
+                    <p><strong>Rating:</strong> <span id="modal-rating"></span></p>
+                    <button id="play-video-btn">Play Video</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video player modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content video-content">
+            <span class="close-video">&times;</span>
+            <div class="video-player">
+                <video id="video-element" controls>
+                    <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

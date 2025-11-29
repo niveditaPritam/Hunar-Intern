@@ -1,0 +1,5 @@
+- [x] Update poster URLs in data.json for trending category (5 movies)
+- [x] Update poster URLs in data.json for topRated category (5 movies)
+- [x] Update poster URLs in data.json for action category (5 movies)
+- [x] Update poster URLs in data.json for comedy category (5 movies)
+- [x] Test the Netflix clone by opening index.html in browser

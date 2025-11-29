@@ -1,0 +1,190 @@
+{
+  "trending": [
+    {
+      "id": 1,
+      "title": "The Crown",
+      "poster": "https://via.placeholder.com/300x450/FF0000/FFFFFF?text=The+Crown",
+      "description": "Follow the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.",
+      "genre": "Drama, History",
+      "year": 2016,
+      "rating": "TV-MA"
+    },
+    {
+      "id": 2,
+      "title": "Breaking Bad",
+      "poster": "https://via.placeholder.com/300x450/00FF00/FFFFFF?text=Breaking+Bad",
+      "description": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine to secure his family's future.",
+      "genre": "Crime, Drama, Thriller",
+      "year": 2008,
+      "rating": "TV-MA"
+    },
+    {
+      "id": 3,
+      "title": "Stranger Things",
+      "poster": "https://via.placeholder.com/300x450/0000FF/FFFFFF?text=Stranger+Things",
+      "description": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.",
+      "genre": "Drama, Fantasy, Horror",
+      "year": 2016,
+      "rating": "TV-14"
+    },
+    {
+      "id": 4,
+      "title": "The Mandalorian",
+      "poster": "https://via.placeholder.com/300x450/FFFF00/000000?text=The+Mandalorian",
+      "description": "The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.",
+      "genre": "Action, Adventure, Sci-Fi",
+      "year": 2019,
+      "rating": "TV-14"
+    },
+    {
+      "id": 5,
+      "title": "Money Heist",
+      "poster": "https://via.placeholder.com/300x450/FF00FF/FFFFFF?text=Money+Heist",
+      "description": "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
+      "genre": "Action, Crime, Mystery",
+      "year": 2017,
+      "rating": "TV-MA"
+    }
+  ],
+  "topRated": [
+    {
+      "id": 6,
+      "title": "The Shawshank Redemption",
+      "poster": "https://via.placeholder.com/300x450/800000/FFFFFF?text=Shawshank",
+      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "genre": "Drama",
+      "year": 1994,
+      "rating": "R"
+    },
+    {
+      "id": 7,
+      "title": "The Godfather",
+      "poster": "https://via.placeholder.com/300x450/008000/FFFFFF?text=Godfather",
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "genre": "Crime, Drama",
+      "year": 1972,
+      "rating": "R"
+    },
+    {
+      "id": 8,
+      "title": "Pulp Fiction",
+      "poster": "https://via.placeholder.com/300x450/000080/FFFFFF?text=Pulp+Fiction",
+      "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "genre": "Crime, Drama",
+      "year": 1994,
+      "rating": "R"
+    },
+    {
+      "id": 9,
+      "title": "Forrest Gump",
+      "poster": "https://via.placeholder.com/300x450/808000/FFFFFF?text=Forrest+Gump",
+      "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75.",
+      "genre": "Drama, Romance",
+      "year": 1994,
+      "rating": "PG-13"
+    },
+    {
+      "id": 10,
+      "title": "Inception",
+      "poster": "https://via.placeholder.com/300x450/800080/FFFFFF?text=Inception",
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "genre": "Action, Sci-Fi, Thriller",
+      "year": 2010,
+      "rating": "PG-13"
+    }
+  ],
+  "action": [
+    {
+      "id": 11,
+      "title": "Mad Max: Fury Road",
+      "poster": "https://via.placeholder.com/300x450/FF8000/FFFFFF?text=Mad+Max",
+      "description": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a group of female prisoners, a psychotic worshiper, and a drifter named Max.",
+      "genre": "Action, Adventure, Sci-Fi",
+      "year": 2015,
+      "rating": "R"
+    },
+    {
+      "id": 12,
+      "title": "John Wick",
+      "poster": "https://via.placeholder.com/300x450/80FF00/FFFFFF?text=John+Wick",
+      "description": "An ex-hit-man comes out of retirement to track down the gangsters that took everything from him.",
+      "genre": "Action, Crime, Thriller",
+      "year": 2014,
+      "rating": "R"
+    },
+    {
+      "id": 13,
+      "title": "Die Hard",
+      "poster": "https://via.placeholder.com/300x450/0080FF/FFFFFF?text=Die+Hard",
+      "description": "An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.",
+      "genre": "Action, Thriller",
+      "year": 1988,
+      "rating": "R"
+    },
+    {
+      "id": 14,
+      "title": "The Dark Knight",
+      "poster": "https://via.placeholder.com/300x450/FF0080/FFFFFF?text=Dark+Knight",
+      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "genre": "Action, Crime, Drama",
+      "year": 2008,
+      "rating": "PG-13"
+    },
+    {
+      "id": 15,
+      "title": "Gladiator",
+      "poster": "https://via.placeholder.com/300x450/80FF80/FFFFFF?text=Gladiator",
+      "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+      "genre": "Action, Adventure, Drama",
+      "year": 2000,
+      "rating": "R"
+    }
+  ],
+  "comedy": [
+    {
+      "id": 16,
+      "title": "The Grand Budapest Hotel",
+      "poster": "https://via.placeholder.com/300x450/8080FF/FFFFFF?text=Grand+Budapest",
+      "description": "A writer encounters the owner of an aging high-class hotel, who tells him of his early years serving as a lobby boy in the hotel's glorious years under an exceptional concierge.",
+      "genre": "Adventure, Comedy, Crime",
+      "year": 2014,
+      "rating": "R"
+    },
+    {
+      "id": 17,
+      "title": "Superbad",
+      "poster": "https://via.placeholder.com/300x450/FF8080/FFFFFF?text=Superbad",
+      "description": "Two co-dependent high school seniors are forced to deal with separation anxiety after their plan to stage a booze-soaked party goes awry.",
+      "genre": "Comedy",
+      "year": 2007,
+      "rating": "R"
+    },
+    {
+      "id": 18,
+      "title": "The Hangover",
+      "poster": "https://via.placeholder.com/300x450/80FFFF/FFFFFF?text=The+Hangover",
+      "description": "Three buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor missing. They make their way around the city in order to find their friend before his wedding.",
+      "genre": "Comedy",
+      "year": 2009,
+      "rating": "R"
+    },
+    {
+      "id": 19,
+      "title": "Groundhog Day",
+      "poster": "https://via.placeholder.com/300x450/FFFF80/FFFFFF?text=Groundhog+Day",
+      "description": "A weatherman finds himself inexplicably living the same day over and over again.",
+      "genre": "Comedy, Fantasy, Romance",
+      "year": 1993,
+      "rating": "PG"
+    },
+    {
+      "id": 20,
+      "title": "Monty Python and the Holy Grail",
+      "poster": "https://via.placeholder.com/300x450/FF80FF/FFFFFF?text=Monty+Python",
+      "description": "King Arthur and his Knights of the Round Table embark on a surreal, low-budget search for the Holy Grail, encountering many, very silly obstacles.",
+      "genre": "Adventure, Comedy, Fantasy",
+      "year": 1975,
+      "rating": "PG"
+    }
+  ]
+}
