@@ -1,12 +1,18 @@
-// Function to implement smooth scrolling
+// Function to implement smooth scrolling for navigation links
 function initSmoothScrolling() {
+    // Select all navigation links that point to an anchor
     document.querySelectorAll('.navigation a[href^="#"]').forEach(anchor => {
+        // Add a click event listener to each anchor
         anchor.addEventListener('click', function (e) {
+            // Prevent the default anchor click behavior
             e.preventDefault();
 
+            // Get the target element's ID from the href attribute
             const targetId = this.getAttribute('href');
+            // Find the target element on the page
             const targetElement = document.querySelector(targetId);
 
+            // If the target element exists, scroll to it smoothly
             if (targetElement) {
                 targetElement.scrollIntoView({
                     behavior: 'smooth'
@@ -16,22 +22,28 @@ function initSmoothScrolling() {
     });
 }
 
-// Function for introduction section enhancement
+// Function to handle the "Read More" button in the introduction section
 function initIntroToggle() {
+    // Get the "Read More" button and the additional information element
     const readMoreBtn = document.getElementById('read-more-btn');
     const moreInfo = document.getElementById('intro-more-info');
 
+    // If both elements exist, add a click event listener to the button
     if (readMoreBtn && moreInfo) {
         readMoreBtn.addEventListener('click', () => {
+            // Check if the additional information is currently hidden
             const isHidden = moreInfo.style.display === 'none';
+            // Toggle the display of the additional information
             moreInfo.style.display = isHidden ? 'block' : 'none';
+            // Change the button text based on the visibility
             readMoreBtn.textContent = isHidden ? 'Show Less' : 'Read More';
         });
     }
 }
 
-// Function to handle project details modal
+// Function to manage the project details modal
 function initProjectDetails() {
+    // Get all "View Details" buttons, the modal, and its components
     const projectButtons = document.querySelectorAll('.view-details-btn');
     const modal = document.getElementById('project-modal');
     const modalTitle = document.getElementById('modal-title');
@@ -39,6 +51,7 @@ function initProjectDetails() {
     const modalLink = document.getElementById('modal-link');
     const closeModal = document.querySelector('.close');
 
+    // Define the project details in an object
     const projects = {
         'project1': {
             title: 'Suicidal Tendency Detection System',
@@ -52,23 +65,30 @@ function initProjectDetails() {
         }
     };
 
+    // Add a click event listener to each "View Details" button
     projectButtons.forEach(button => {
         button.addEventListener('click', () => {
+            // Get the project ID from the data-project attribute
             const projectId = button.getAttribute('data-project');
+            // Get the corresponding project details
             const project = projects[projectId];
 
+            // Populate the modal with the project details
             modalTitle.textContent = project.title;
             modalDescription.textContent = project.description;
             modalLink.href = project.link;
 
+            // Display the modal
             modal.style.display = 'block';
         });
     });
 
+    // Add a click event listener to the close button to hide the modal
     closeModal.addEventListener('click', () => {
         modal.style.display = 'none';
     });
 
+    // Add a click event listener to the window to hide the modal if the user clicks outside of it
     window.addEventListener('click', (event) => {
         if (event.target == modal) {
             modal.style.display = 'none';
