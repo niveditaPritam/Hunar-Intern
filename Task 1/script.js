@@ -8,27 +8,13 @@ function initSmoothScrolling() {
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-                // Scroll smoothly to the target element
                 targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
-
-                // Optional: Adjust for fixed header offset
-                // You can get the header height dynamically if needed
-                const headerHeight = 60; // Approximate height of your fixed header
-                const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
-                window.scrollTo({
-                    top: targetPosition,
                     behavior: 'smooth'
                 });
             }
         });
     });
 }
-
-// Initialize smooth scrolling when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', initSmoothScrolling);
-// ... (existing initSmoothScrolling function and DOMContentLoaded event listener)
 
 // Function for introduction section enhancement
 function initIntroToggle() {
@@ -37,51 +23,62 @@ function initIntroToggle() {
 
     if (readMoreBtn && moreInfo) {
         readMoreBtn.addEventListener('click', () => {
-            // Toggle visibility of the additional information
             const isHidden = moreInfo.style.display === 'none';
             moreInfo.style.display = isHidden ? 'block' : 'none';
-
-            // Change button text
             readMoreBtn.textContent = isHidden ? 'Show Less' : 'Read More';
         });
     }
 }
 
-// Call the new function in the DOMContentLoaded event
-document.addEventListener('DOMContentLoaded', () => {
-    initSmoothScrolling();
-    initIntroToggle(); // <--- Add this
-});
+// Function to handle project details modal
+function initProjectDetails() {
+    const projectButtons = document.querySelectorAll('.view-details-btn');
+    const modal = document.getElementById('project-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
+    const modalLink = document.getElementById('modal-link');
+    const closeModal = document.querySelector('.close');
 
-// ... (existing code for smooth scrolling and intro toggle)
+    const projects = {
+        'project1': {
+            title: 'Suicidal Tendency Detection System',
+            description: 'Built a suicidal tendency detection system using Support Vector Machine (SVM) with 85% classification accuracy on a dataset of 500+ user inputs. It classifies the entered text input as either suicidal or non- suicidal. Used HTML, CSS for developing user interface. Integrated frontend and backend to deliver real-time predictions with response time under 1 second. Conducted testing with different datasets to ensure 75%+ model reliability across varied linguistic patterns.',
+            link: 'https://github.com/niveditaPritam/suicidalTendencyDetection'
+        },
+        'project2': {
+            title: 'AI-Powered Healthcare Assistant for Rural Areas',
+            description: 'Introducing Bloom: an AI-driven healthcare chatbot for rural areas. It offers symptom analysis, SOS alerts, telemedicine, and pharmacy tracking for fast life-saving care.',
+            link: '#'
+        }
+    };
 
-// Function for projects section enhancement
-function initProjectDetailsToggle() {
-    // Select all 'View Details' buttons
-    const detailBtns = document.querySelectorAll('.view-details-btn');
+    projectButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const projectId = button.getAttribute('data-project');
+            const project = projects[projectId];
 
-    detailBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            // Get the parent card body
-            const cardBody = this.closest('.card-body');
-            // Find the hidden details container within this card
-            const detailsDiv = cardBody.querySelector('.project-details');
-            
-            if (detailsDiv) {
-                // Toggle display
-                const isHidden = detailsDiv.style.display === 'none';
-                detailsDiv.style.display = isHidden ? 'block' : 'none';
+            modalTitle.textContent = project.title;
+            modalDescription.textContent = project.description;
+            modalLink.href = project.link;
 
-                // Change button text
-                this.textContent = isHidden ? 'View Summary' : 'View Details';
-            }
+            modal.style.display = 'block';
         });
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
     });
 }
 
-// Update the DOMContentLoaded event to include the new function
+// Initialize all functionalities when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     initSmoothScrolling();
     initIntroToggle();
-    initProjectDetailsToggle(); // <--- Add this
+    initProjectDetails();
 });
