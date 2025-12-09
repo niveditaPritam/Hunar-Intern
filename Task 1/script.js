@@ -28,3 +28,27 @@ function initSmoothScrolling() {
 
 // Initialize smooth scrolling when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', initSmoothScrolling);
+// ... (existing initSmoothScrolling function and DOMContentLoaded event listener)
+
+// Function for introduction section enhancement
+function initIntroToggle() {
+    const readMoreBtn = document.getElementById('read-more-btn');
+    const moreInfo = document.getElementById('intro-more-info');
+
+    if (readMoreBtn && moreInfo) {
+        readMoreBtn.addEventListener('click', () => {
+            // Toggle visibility of the additional information
+            const isHidden = moreInfo.style.display === 'none';
+            moreInfo.style.display = isHidden ? 'block' : 'none';
+
+            // Change button text
+            readMoreBtn.textContent = isHidden ? 'Show Less' : 'Read More';
+        });
+    }
+}
+
+// Call the new function in the DOMContentLoaded event
+document.addEventListener('DOMContentLoaded', () => {
+    initSmoothScrolling();
+    initIntroToggle(); // <--- Add this
+});
