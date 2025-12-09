@@ -52,3 +52,36 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScrolling();
     initIntroToggle(); // <--- Add this
 });
+
+// ... (existing code for smooth scrolling and intro toggle)
+
+// Function for projects section enhancement
+function initProjectDetailsToggle() {
+    // Select all 'View Details' buttons
+    const detailBtns = document.querySelectorAll('.view-details-btn');
+
+    detailBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Get the parent card body
+            const cardBody = this.closest('.card-body');
+            // Find the hidden details container within this card
+            const detailsDiv = cardBody.querySelector('.project-details');
+            
+            if (detailsDiv) {
+                // Toggle display
+                const isHidden = detailsDiv.style.display === 'none';
+                detailsDiv.style.display = isHidden ? 'block' : 'none';
+
+                // Change button text
+                this.textContent = isHidden ? 'View Summary' : 'View Details';
+            }
+        });
+    });
+}
+
+// Update the DOMContentLoaded event to include the new function
+document.addEventListener('DOMContentLoaded', () => {
+    initSmoothScrolling();
+    initIntroToggle();
+    initProjectDetailsToggle(); // <--- Add this
+});
